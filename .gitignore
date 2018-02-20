@@ -1,0 +1,13 @@
+# OS
+*DS_Store*
+._*.html
+._*.png
+._*
+**/.sass-cache/**
+**/.__*.scss
+*.css.map
+
+._*
+
+node_modules
+*/node_modules
