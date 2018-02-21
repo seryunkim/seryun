@@ -1,18 +1,95 @@
-function component() {
-  var element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  return element;
-}
-
-document.body.appendChild(component());
-function test(){
-  
-}
-$( document ).ready(function() {
-    console.log( "ready!!" );
+// function component() {
+//   var element = document.createElement('div');
+// 
+//   // Lodash, currently included via a script, is required for this line to work
+//   // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//   return element;
+// }
+// 
+// document.body.appendChild(component());
+// function test(){
+//   
+// }
+// $( document ).ready(function() {
+//     console.log( "ready!!" );
+// });
+Vue.component('todo-item', {
+  //사용자 속성
+  props:['todo'],
+  template:'<li>{{todo.text}}</li>'
 });
+
+var todo=new Vue({
+  el:'#todo_app',
+  data:{
+    glist:[
+      {id:0,text:'text1'},
+      {id:1,text:'text2'},
+      {id:2,text:'text3'}
+    ]
+  }
+  
+});
+
+var app = new Vue({
+  el:'#app',
+  data:{
+    message:'이 페이지는 ' + new Date() + '에 로드 되었다.',
+    todo:[
+      {text:'1'},
+      {text:'12'},
+      {text:'123'}
+    ],
+    seen:true,
+    message2:''
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+});
+
+
+// Vue.component('todo-item', {
+//   // 이제 todo-item 컴포넌트는 "prop" 이라고 하는
+//   // 사용자 정의 속성 같은 것을 입력받을 수 있습니다.
+//   // 이 prop은 todo라는 이름으로 정의했습니다.
+//   props: ['todo'],
+//   template: '<li>{{ todo.text }}</li>'
+// })
+
+// const $ = require('jquery');
+// const ajaxLoader = require('./common/ajaxLoader.js');
+// const updateQuery = require('_js/m/common/updateQuery');
+
+// setList();
+// function setList(){
+//     console.log('set init');
+//     new Vue({
+//         el:"list_wrap",
+//         template:"/template/list.html",
+//         data:{
+//             item:[
+//                 {text:'list1'},
+//                 {text:'list2'},
+//                 {text:'list3'},
+//                 {text:'list4'},
+//                 {text:'list5'}
+//             ]
+//         }
+//     });
+// }
+
+// module.exports = {
+//     
+// }
+// $(function(){
+//     console.log( "ready!!" );
+//     init();
+//     
+// });
+
 
 
 // new vue({
