@@ -1,0 +1,246 @@
+{
+  "operation": [
+    {
+      "jira": "UXUI",
+      "title": "프로젝트명",
+      "url": "url",
+      "start": "16.07.18",
+      "end": "16.07.20",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-688",
+      "title": "플랫폼 효율화 프로젝트 - 조회영역",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2017/0314_point/index.html",
+      "start": "17.03.14",
+      "end": "17.03.15",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-378",
+      "title": "[PC/MW/APP] 최근 배송지 UI 개발",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/1027_ship/index.html",
+      "start": "16.11.01",
+      "end": "",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-368",
+      "title": "마이페이지 반품교환 안내 이미지 수정",
+      "url": "url",
+      "start": "16.10.25",
+      "end": "16.10.26",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-360",
+      "title": "배송지연보상제 이미지 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com",
+      "start": "16.10.25",
+      "end": "16.10.25",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-353",
+      "title": "[PC/모바일APP] 프론트 내 무료배송 추가 관련 UI 요청",
+      "url": "http://seryunkim.free.frontend.gagamel.com/css/html/2016/1018_deal/no_deal.html",
+      "start": "16.10.18",
+      "end": "-",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-133",
+      "title": "회원정보수정 > 휴대폰번호 > SMS수신동의 문구 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com/member/user_modify/?certificate_flag=null",
+      "start": "16.06.29",
+      "end": "16.06.29",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-109",
+      "title": "딜상세 물결표시(~) 노출 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com/deal/adeal/379091/100000/?source=100000&no=2",
+      "start": "16.06.28",
+      "end": "16.06.29",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-49",
+      "title": "[이벤트] 에이스 덴탈보험",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0609_ace/index.html",
+      "start": "16.06.07",
+      "end": "16.06.15",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-66",
+      "title": "포인트 환급 신청 안내 문구 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0523_point/point.html",
+      "start": "16.05.23",
+      "end": "16.05.24",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-27",
+      "title": "[PC/모바일웹/앱] 정보통신망법 개정에 따른 용어 변경",
+      "url": "http://seryunkim.front.frontend.gagamel.com",
+      "start": "16.04.27",
+      "end": "16.05.03",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-6",
+      "title": "위메프/위메프BOX 개인정보취급방침 개정 변경",
+      "url": "http://seryunkim.front.frontend.gagamel.com/customer_center/private_policy/",
+      "start": "16.04.14",
+      "end": "16.04.25",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-846",
+      "title": "1:1문의 안내문구 추가",
+      "url": "http://seryunkim.front.frontend.gagamel.com/mypage/qna",
+      "start": "16.04.11",
+      "end": "16.04.18",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-843",
+      "title": "회원정보수정 > 이름변경 '개명' 추가",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0407_member/member.html",
+      "start": "16.04.07",
+      "end": "16.04.26",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-818",
+      "title": "app푸시동의 여부를 약관에 녹이기",
+      "url": "http://seryunkim.front.frontend.gagamel.com",
+      "start": "16.04.04",
+      "end": "16.04.07",
+      "status":"완료"
+    },{
+      "jira": "FRONTEND-734",
+      "title": "플러스 딜상세 배송안내배너 변경요청_UI",
+      "url": "http://seryunkim.front.frontend.gagamel.com",
+      "start": "16.03.07",
+      "end": "16.03.09",
+      "status":"완료"
+    },{
+      "jira": "FRONTEND-733",
+      "title": "위메프 페이지 내 고객센터 관련 내용 수정(biz포함)",
+      "url": "http://seryunkim.front.frontend.gagamel.com",
+      "start": "16.03.07",
+      "end": "16.03.14",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-641",
+      "title": "플러스카테고리 네이밍변경_UI",
+      "url": "http://seryunkim.front.frontend.wslab.com/css/html/2016/0120/plus.html",
+      "start": "16.01.19",
+      "end": "16.01.28",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-610",
+      "title": "제안하기_12월 우수제안자 선정 공지",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2015/1230/proposal.html",
+      "start": "15.12.30",
+      "end": "16.01.04",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-601",
+      "title": "미사용티켓 안내페이지 UI 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2015/1228/unused_ticket.html",
+      "start": "15.12.23",
+      "end": "16.01.08",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-574",
+      "title": "장바구니 품절 노출 처리 수정",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2015/1216/cart.html",
+      "start": "15.12.16",
+      "end": "15.12.16",
+      "status":"완료"
+    },
+    {
+      "jira": "FRONTEND-571",
+      "title": "회원정보 수정 페이지 내 문구 수정",
+      "url": "http://test.wemakeprice.com/member/user_modify/?certificate_flag=null",
+      "start": "15.12.10",
+      "end": "15.12.15",
+      "status":"완료"
+    }
+  ],
+  "project": [
+    {
+      "jira": "UXUI-484",
+      "title": "[UI] 구매후기 기능 추가에 따른 UI작업",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/1229_review/index.html",
+      "start": "16.12.29",
+      "end": "17.01.18",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-489",
+      "title": "[이벤트] 이메일/SMS 수신동의 이벤트 (고동수 프로젝트1) (pc,mobile)",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/1221_email/index.html",
+      "start": "16.12.21",
+      "end": "17.01.05",
+      "status":"완료"
+    },
+    {
+      "jira": "CREVIEW-18",
+      "title": "구매후기_UI개발 - 팝업",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0718_review/index.html",
+      "start": "16.07.15",
+      "end": "16.07.19",
+      "status":"완료"
+    },
+    {
+      "jira": "CLAIM-4",
+      "title": "클레임",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/claim/index.html",
+      "start": "-",
+      "end": "-",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI",
+      "title": "프로젝트명",
+      "url": "url",
+      "start": "16.07.18",
+      "end": "16.07.19",
+      "status":"완료"
+    }
+  ],
+  "event": [
+    {
+      "jira": "UXUI-338",
+      "title": "[보험] 동부화재 자동차보험",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/1007_driver/index.html",
+      "start": "16.10.07",
+      "end": "16.10.10",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-288",
+      "title": "[보험] 삼성화재 자녀보험",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0907_samsung/index.html",
+      "start": "16.09.07",
+      "end": "16.09.12",
+      "status":"완료"
+    },
+    {
+      "jira": "UXUI-49",
+      "title": "[보험] 에이스 덴탈보험",
+      "url": "http://seryunkim.front.frontend.gagamel.com/css/html/2016/0609_ace/index.html",
+      "start": "16.06.07",
+      "end": "16.06.15",
+      "status":"완료"
+    }
+  ]
+}

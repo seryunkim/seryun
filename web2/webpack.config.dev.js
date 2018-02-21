@@ -1,13 +1,15 @@
 // webpack.config.dev.js
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+// const $ = require('jquery');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-eval-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    './src/index'
+    'webpack/hot/dev-server',
+    './src/js/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -16,7 +18,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/templates/index.html'
     })
   ],
   module: {

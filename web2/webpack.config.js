@@ -12,7 +12,7 @@ module.exports = {
   //   './src/index'
   // ],
   devtool: 'source-map',
-  entry: ['./src/index'],
+  entry: ['./src/js/index'],
   output: {
     path: path.join(__dirname, 'dist'), //result directory
     filename: 'bundle.js'
@@ -26,7 +26,7 @@ module.exports = {
     }),
     //html template 생성
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/templates/index.html'
     })
   ],
   module: {
