@@ -13,43 +13,52 @@
 // $( document ).ready(function() {
 //     console.log( "ready!!" );
 // });
-Vue.component('todo-item', {
-  //사용자 속성
-  props:['todo'],
-  template:'<li>{{todo.text}}</li>'
-});
 
-var todo=new Vue({
-  el:'#todo_app',
-  data:{
-    glist:[
-      {id:0,text:'text1'},
-      {id:1,text:'text2'},
-      {id:2,text:'text3'}
-    ]
-  }
-  
-});
-
-var app = new Vue({
-  el:'#app',
-  data:{
-    message:'이 페이지는 ' + new Date() + '에 로드 되었다.',
-    todo:[
-      {text:'1'},
-      {text:'12'},
-      {text:'123'}
-    ],
-    seen:true,
-    message2:''
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
+var vm = new Vue({
+    el:'',
+    methods:{
+      
     }
-  }
-});
+})
 
+//-------------------
+// Vue.component('todo-item', {
+//   //사용자 속성
+//   props:['todo'],
+//   template:'<li>{{todo.text}}</li>'
+// });
+// 
+// var todo=new Vue({
+//   el:'#todo_app',
+//   data:{
+//     glist:[
+//       {id:0,text:'text1'},
+//       {id:1,text:'text2'},
+//       {id:2,text:'text3'}
+//     ]
+//   }
+//   
+// });
+// 
+// var app = new Vue({
+//   el:'#app',
+//   data:{
+//     message:'이 페이지는 ' + new Date() + '에 로드 되었다.',
+//     todo:[
+//       {text:'1'},
+//       {text:'12'},
+//       {text:'123'}
+//     ],
+//     seen:true,
+//     message2:''
+//   },
+//   methods: {
+//     reverseMessage: function () {
+//       this.message = this.message.split('').reverse().join('')
+//     }
+//   }
+// });
+//------------------------
 
 // Vue.component('todo-item', {
 //   // 이제 todo-item 컴포넌트는 "prop" 이라고 하는

@@ -19,7 +19,23 @@
     
     <p v-if='seen'>볼수있을까?</p>
     
+    <p>{{message}}</p>
     <button v-on:click="reverseMessage">메세지 뒤집어라</button>
+    
+    <br/>
+    <br/>
+    
+    <input v-model="message2" type="text" />
+    <p style="background:pink;height:18px;">{{message2}}</p>
+  </div>
+  
+  <div id="todo_app">
+    <ul>
+      <todo-item
+        v-for='item in glist'
+        v-bind:todo='item'
+        v-bind:key='item.id'></todo-item>
+    </ul>
   </div>
 <script type="text/javascript" src="bundle.js"></script></body>
 <script>
