@@ -19,12 +19,9 @@
           <li><a href="#none">서브메뉴1</a></li>
         </ul>
       </li> -->
-      <!-- <li class="on" v-for="menu in menu">
-        
-      </li> -->
       <li v-for="(menu, index) in menu">
         <a href="#none" v-on:click="menuClick(index)">{{ menu.cate }}</a>
-        <ul class="sub" v-if="subCheck">
+        <ul class="sub" v-if="subCheck()">
           <li><a href="#none">{{ menu.sub_cate }}</a></li>
         </ul>
       </li>
@@ -34,38 +31,7 @@
 </template>
 
 <script>
-// export default {
-//   name: 'app-side-bar',
-//   data () {
-//     return {
-//       msg: '사이드바'
-//     }
-//   }
-// }
-// new Vue({
-//   el: '.side_bar',
-//   methods: {
-//     say: function (message) {
-//       alert(message)
-//     }
-//   }
-// })
-// 
-// data(){
-//   menu:[
-//     {cate:'menu1',sub:[{sub_cate:'sub1'},{sub_cate:'sub2'},{sub_cate:'sub3'}]},
-//     {cate:'menu2',sub:[]},
-//     {cate:'menu3',sub:[{sub_cate:'sub1'},{sub_cate:'sub2'}]}
-//   ]
-// },
 export default {
-  // data(){
-  //   menu:[
-  //     {cate:'menu1'},
-  //     {cate:'menu2'},
-  //     {cate:'menu3'}
-  //   ]
-  // },
   name:'app-side-bar',
   data(){
     return{
