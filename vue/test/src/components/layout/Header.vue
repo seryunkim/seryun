@@ -9,6 +9,8 @@
 </template>
 
 <script>
+require('../../assets/css/layout/header.css');
+
 export default {
   name: 'app-header',
   data () {
@@ -21,24 +23,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.title{
-  padding:10px;
-  background-color:#fff;
-  border-bottom:1px solid #eee;
-}
-.title:after{
-  content:'';
-  display:block;
-  clear:both;
-}
-.title > div{cursor:pointer;}
-.h_left{float:left;}
-.h_right{float:right;}
-h2{
-  padding:0 40px;
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-}
-
 </style>

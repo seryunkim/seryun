@@ -44,6 +44,8 @@
 </template>
 
 <script>
+require('../../assets/css/layout/footer.css');
+
 export default {
   name: 'app-footer',
   data () {
@@ -56,20 +58,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-footer{
-	padding-top:20px;
-  border-top:1px solid #ddd;
-  font-size:12px;
-}
-ul{
-  display:inline-block;
-}
-ul:after{
-  content:'';
-  clear:both;
-  display:block;
-}
-ul > li{float:left;}
-.f_link li{padding:0 5px;}
-.f_info{color:#999;}
 </style>

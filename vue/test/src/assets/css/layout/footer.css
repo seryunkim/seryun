@@ -1,0 +1,16 @@
+footer{
+	padding-top:20px;
+  border-top:1px solid #ddd;
+  font-size:12px;
+}
+footer ul{
+  display:inline-block;
+}
+footer ul:after{
+  content:'';
+  clear:both;
+  display:block;
+}
+footer ul > li{float:left;}
+.f_link li{padding:0 5px;}
+.f_info{color:#999;}
