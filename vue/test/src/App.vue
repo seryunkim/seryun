@@ -20,10 +20,16 @@
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import MainSideBar from './components/layout/MainSideBar'
+// import css from 'file.css'
 
 // var rootPath = path.join(__dirname, '../', '../');
+
+// link, import 
+// const Header = require('./components/layout/Header'); 
+// const Footer = require('./components/layout/Footer'); 
+// const MainSideBar = require('./components/layout/MainSideBar'); 
 // require('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-require('./assets/css/reset.css'); //import css from 'file.css';
+require('./assets/css/reset.css'); //
 
 export default {
   name: 'App',

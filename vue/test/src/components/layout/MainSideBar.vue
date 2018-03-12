@@ -1,6 +1,6 @@
 <template>
   <!-- side bar -->
-	<div class="side_bar on">
+	<div class="side_bar">
     <ul class="menu">
       <!-- <li class="on">
         <a href="#none">메뉴1</a>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+require('../../assets/css/layout/sidebar.css');
+
 export default {
   name:'app-side-bar',
   data(){
@@ -45,10 +47,11 @@ export default {
   methods: {
     menuClick(idx){
       console.log('click',idx);
+      $('.side_bar').removeClass('on');
       // console.log('click',this.$parent);
     },
     subCheck(){
-      console.log('in',this)
+      //console.log('in',this)
       return false;
     }
   }
@@ -57,41 +60,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.side_bar{
-  position:absolute;
-  left:-100px;
-  top:0;
-  bottom:0;
-  width:200px;
-  min-height:100%;
-  background-color:#000c17;
-}
-.side_bar.on{
-  left:0;
-  bottom:0;
-}
-.menu{
-  border-bottom:1px solid #06192b;
-}
-.menu li{
-  border-bottom:1px solid #06192b;
-}
-.on .sub{display:block;}
-/*ul.menu ~ .sub{display:none}*/
-.sub{
-  display:none;
-  background-color:#06192b;
-}
-a{
-  display:block;
-  padding:10px 20px;
-}
-a:hover{
-  box-shadow:inset 0 0 0 100px rgba(255,255,255,.05);
-}
-li{
-  color:#fff;
-  text-align:left;
-}
 
 </style>
