@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Vue Sample2</title>
+    </head>
+    <body>
+        <div id="app">
+            <button>컴포넌트 등록</button>
+            <my-component></my-component>
+            <!-- <my-local></my-local> -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+        <script>
+            //컴포넌트 등록(전역)
+            // Vue.component('my-component',{
+            //     template:'<div>나다! 전역 컴포넌트</div>'
+            // });
+            //컴포넌트 등록(지역)
+            var cmp={
+                template:'<div>난! 지역 컴포넌트</div>'
+            }
+            new Vue({
+                components:{
+                    'my-local':cmp
+                }
+            });
+        </script>
+    </body>
+</html>

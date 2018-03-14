@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Vue Sample</title>
+    </head>
+    <body>
+        <div id="app">
+            {{message}}
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el:'#app',
+                data:{
+                    message:'Hello'
+                },
+                beforeCreate:function(){//가장 처음 수행
+                    console.log('beforeCreate');
+                },
+                created:function(){//el부착전, 서버에 데이터 요청하여 받아오는 로직 수행 
+                    console.log('create');
+                },
+                mounted:function(){//인스턴스 붙고 나서 수행
+                    console.log('mounted');
+                    this.message = 'Hello Vue!';
+                },
+                beforeUpdate:function(){//인스턴스 부착하고 데이터 관찰 (watch)> 변경 예정 데이터 로직을 미리 넣을수 있지만, 값을 변경하는 로직을 넣어도 화면이 다시 안그려짐 >> 데이터값을 갱신 
+                    console.log('beforeUpdate');
+                },
+                updated:function(){//데이터 변경 되면 다시 화면 그릴때 수행 >> 변경데이터의 화면 요소 로직 추가
+                    console.log('updated');
+                }
+            });
+        </script>
+    </body>
+</html>
