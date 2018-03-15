@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이벤트 버스</title>
+</head>
+
+<body>
+    <div id="app">
+        <child-cmp></child-cmp>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+        //인스턴스 생성
+        var evtBus = new Vue();
+        //전역 cmp생성
+        Vue.component('child-cmp', {
+            template: '<div>하위 컴포넌트입니다. <br/> <button v-on:click="showLog">show</button></div>',
+            methods: {
+                showLog: function() {
+                    evtBus.$emit('triggerEvtBus', 100); //이벤트 발생>전달
+                }
+            }
+        });
+        //인스턴스 등록
+        var app = new Vue({
+            el: '#app',
+            created: function() {
+                evtBus.$on('triggerEvtBus', function(value) { // 이벤트 받음
+                    console.log('event received. value : ', value);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

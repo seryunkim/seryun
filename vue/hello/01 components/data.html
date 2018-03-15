@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>데이터 통신-상하위</title>
+</head>
+
+<body>
+    <!-- 데이터 속성 -->
+    <div id="app">
+        <my-cmp1></my-cmp1>
+        <my-cmp2></my-cmp2>
+        <child-cmp v-bind:propsData='message'></child-cmp>
+        <!-- 속성이름 : 데이터 속성 -->
+    </div>
+    <!-- 이벤트 발생,수신 -->
+    <div id="app2">
+        <child-cmp2 v-on:show-log='printText'></child-cmp2>
+        <!-- 하위컴포넌트의 이벤트 발생 전달되어,상위 컴포넌트 메서드 호출-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script>
+        // 데이터 속성
+        Vue.component('child-cmp', {
+            props: ['propsdata'], //하위 컴포넌트의 props 속성 정의
+            template: '<p>들어온 속성은 {{propsdata}}</p>'
+        });
+        var cmp1 = {
+            template: '<div>첫번째 지역 cmp :{{cmp1data}}</div>',
+            data: function() {
+                return {
+                    cmp1data: 100
+                }
+            }
+        };
+        var cmp2 = {
+            template: '<div>두번째 지역 cmp :{{cmp2data}}</div>',
+            data: function() {
+                return {
+                    cmp2data: cmp1.data.cmp1data
+                }
+            }
+        };
+        new Vue({
+            el: '#app',
+            components: {
+                'my-cmp1': cmp1,
+                'my-cmp2': cmp2
+            },
+            data: {
+                message: 'Hello'
+            }
+        });
+        // 이벤트 발생,수신
+        Vue.component('child-cmp2', {
+            template: '<button v-on:click="showLog">show</button>', //버튼 클릭시 , showlog 함수 실행하여 하위 이벤트 발생시킴
+            methods: {
+                showLog: function() {
+                    this.$emit('show-log'); //이벤트 발생
+                }
+            }
+        });
+        new Vue({
+            el: '#app2',
+            methods: {
+                printText: function() {
+                    console.log('이벤트 받음!!');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
