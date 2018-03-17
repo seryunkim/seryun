@@ -7,6 +7,8 @@
     <title>홈</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/home.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 
 <body>
@@ -34,68 +36,116 @@
         
         <!-- contents -->
         <section class="contents home">
-            
+            <!-- 추천 툰 -->
+            <div class="toon_visual hot_toon">
+                <a href="#none">
+                    <div class="info">
+                        <p class="txt">버프툰 강력 추천</p>
+                        <p class="info_tit">무리수의 나날</p>
+                        <p class="info_comment">개화기의 려한,<br />무리수고등학교에서 벌어지는<br />무리수 가득한 나날</p>
+                        <p class="info_author">글, 그림: Ra.P.A., Ya.M.A.</p>
+                        <span class="go_toon">툰 보러가기</span>
+                    </div>
+                    <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_c/toon_c_m_39-1.jpg" alt="무리수의 나날" /></div>
+                </a>
+            </div>
+            <!-- //추천 툰 -->
             <!-- 오늘의 웹툰  -->
-            <article class="today_toon">
-                <a class="title">오늘의 웹툰</a>
+            <div class="slider_wrap today_toon">
+                <a class="list_title">오늘의 웹툰</a>
                 <div class="list">
                     <ul>
                         <li>
                             <a href="#none">
-                                <span class="toon_name">웹툰 이름</span>
-                                <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_a/toon_a_25.jpg" alt="럼블 온 더 캠퍼스" /></div>
+                                <span class="name">럼블 온 더 캠퍼스</span>
                             </a>
                         </li>
                         <li>
                             <a href="#none">
-                                <span class="toon_name">웹툰 이름</span>
-                                <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_a/toon_a_38.jpg" alt="너의마법을 속여라" /></div>
+                                <span class="name">너의마법을 속여라</span>
                             </a>
                         </li>
                         <li>
                             <a href="#none">
-                                <span class="toon_name">웹툰 이름</span>
-                                <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_a/toon_a_39-1.jpg" alt="무리수의 나날" /></div>
+                                <span class="name">무리수의 나날</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </article>
+            </div>
             <!-- //오늘의 웹툰  -->
-            <!-- 오늘의 웹툰  -->
-            <article class="today_toon">
-                    <a class="title">오늘의 웹툰</a>
-                    <div class="list">
-                        <ul>
-                            <li>
-                                <a href="#none">
-                                    <span class="toon_name">웹툰 이름</span>
-                                    <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#none">
-                                    <span class="toon_name">웹툰 이름</span>
-                                    <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#none">
-                                    <span class="toon_name">웹툰 이름</span>
-                                    <img src="https://dummyimage.com/165/fff/000" alt="웹툰" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <!-- //오늘의 웹툰  -->
+            <!-- 스페셜 -->
+            <div class="slider_wrap special_toon">
+                <a class="list_title">봄에는 두근두근 설레는 '신작'</a>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_76.jpg" alt="리트라이" /></div>                        
+                                <span class="name">리트라이</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_75.jpg" alt="야신을 위하여" /></div>                                
+                                <span class="name">야신을 위하여</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_73.jpg" alt="러브픽시" /></div>
+                                <span class="name">무리수의 나날</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //스페셜 -->
+            <!-- 스페셜 -->
+            <div class="slider_wrap special_toon">
+                <a class="list_title">봄에는 두근두근 설레는 '신작'</a>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_69.jpg" alt="엄마,나 그리고 꼬미" /></div>                        
+                                <span class="name">엄마,나 그리고 꼬미</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_72.jpg" alt="무명소년" /></div>                                
+                                <span class="name">무명소년</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_68.jpg" alt="디어 마이 메랑" /></div>
+                                <span class="name">디어 마이 메랑</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="img_wrap"><img src="https://buffimgs.plaync.com/buff/webtoon/toon_b/toon_b_71.jpg" alt="권희" /></div>
+                                <span class="name">권희</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //스페셜 -->
+
         </section>
         <!-- //contents -->
 
         <!-- footer -->
         <footer class="footer">
-            <div class="app_banner">
-                <a href="#none"><img src="https://dummyimage.com/400x120/f0286e/ffffff&text=APP+DOWN" alt="앱 다운로드 배너"></a>
+            <div class="app_banner" style="background:#ff3a3a">
+                <!-- <a href="#none"><img src="https://dummyimage.com/400x120/f0286e/ffffff&text=APP+DOWN" alt="앱 다운로드 배너"></a> -->
+                <a href="#none"><img src="https://bufftoon.plaync.com//buffweb/m/images/common/img_app_download.png" alt="앱 다운로드 배너"></a>
             </div>
             <div class="f_info">
                 <a class="facebook" href="#none"><em>페이스북</em>버프툰의 새로운 소식을 받아보세요</a>

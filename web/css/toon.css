@@ -1,1 +1,135 @@
 @charset "utf-8";
+/* 툰 정보 */
+.desc{
+    padding:12px 0;
+    border:1px solid #d8d8d8;
+    border-width:1px 0;
+}
+.desc:after{
+    clear:both;
+    display:table;
+    content:'';
+}
+.desc .score{
+    float:left;
+}
+.score .stars{
+    position:relative;
+    display:inline-block;
+    margin-left:15px;
+    width:111px;
+    height:23px;
+}
+.score .stars img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:111px;
+    height:23px;
+}
+.score .stars i{
+    display:inline-block;
+    width:0;
+    height:23px;
+    background-color:#ff3a3a;
+}
+.score .data{
+    display:inline-block;
+    margin:3px 0 0 4px;
+    color:#ff3a3a;
+    font-size:11px;
+    line-height:23px;
+    vertical-align:top;
+}
+.desc .desc_btn_wrap{
+    float:right;
+}
+.desc_btn_wrap li{
+    float:left;
+    color:#000;
+    font-size:9px;
+    line-height:11px;
+}
+.desc_btn_wrap a{
+    display:block;
+    padding:30px 12px 0;
+    background-repeat:no-repeat;
+    background-position:50% 0;
+}
+.share a{
+    background-image: url(https://bufftoon.plaync.com/buffweb/m/images/common/ico_toon_desc_share.png);
+    background-size: 14px auto;
+}
+.like a{
+    background-image: url(https://bufftoon.plaync.com/buffweb/m/images/common/ico_toon_desc_like.png);
+    background-size: 14px auto;
+}
+.view_first a{
+    background-image: url(https://bufftoon.plaync.com/buffweb/m/images/common/ico_toon_desc_first.png);
+    background-size: 20px auto;
+}
+
+/* 리스트 */
+.toon_list{
+    padding:30px 15px;
+}
+.toon_list ul{
+    margin-top:12px;
+    border-bottom:1px solid #d8d8d8;
+}
+.toon_list li{
+    position:relative;
+    padding:10px 0 10px 90px;
+    min-height:75px;
+    border-top:1px solid #d8d8d8;
+}
+.toon_list .img_wrap{
+    position:absolute;
+    top:10px;
+    left:0;
+}
+.toon_list .img_wrap:before{
+    content:'';
+    position: absolute;
+    left:0;right:0;
+    top:0;bottom:0;
+    border:1px solid rgba(0,0,0,.2);
+}
+.toon_list .img_wrap img{
+    width:75px;
+    height:75px;
+}
+.toon_info .tit{
+    padding-bottom:20px;
+}
+.toon_info .score{
+    float:left;
+}
+.toon_info .stars,.toon_info .stars img,.toon_info .stars i{
+    margin:0;
+    width:61.5px;
+    height:13px;
+}
+.toon_info .data{
+    line-height:13px;
+}
+.community{
+    float:right;
+}
+.community span{
+    display:inline-block;
+    padding-left:13px;
+    background-repeat:no-repeat;
+    background-position:0 center;
+}
+.community span ~ span{
+    margin-right:5px;
+}
+.community .reply{
+    background-image: url(https://bufftoon.plaync.com/buffweb/m/images/common/ico_reply_858585.png);
+    background-size: 10px auto;
+}
+.community .like{
+    background-image: url(https://bufftoon.plaync.com/buffweb/m/images/common/ico_like_858585.png);
+    background-size: 11.5px auto;
+}

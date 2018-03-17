@@ -1,12 +1,6 @@
 @charset "utf-8";
-
-/* 오늘의 웹툰 */
-.today_toon{
-    padding:30px 15px;
-    background-color:#f8f8f8;
-    overflow:hidden;
-}
-.title{
+/***** 공통 *****/
+.list_title{
     display:block;
     padding-bottom:15px;
     background:url(https://bufftoon.plaync.com/buffweb/m/images/common/btn_more.png) no-repeat 100% 0;
@@ -15,33 +9,98 @@
     line-height:18px;
     color:#333;
 }
-.today_toon .list{
+
+/* 슬라이더 리스트 */
+.slider_wrap{
+    padding:30px 15px;
+    border-top:1px solid #d8d8d8;
+    background-color:#f8f8f8;
+    overflow:hidden;
+}
+.slider_wrap .list{
+    overflow-y:hidden;
+    overflow-x:scroll;
+    -webkit-overflow-scrolling:touch;
+    overflow:-moz-scrollbars-none; /*scroll 안보이게*/
+    -ms-overflow-style:none;
+}
+.slider_wrap .list::-webkit-scrollbar { 
+    display: none;
+}
+.slider_wrap ul{
     width:10000px;
 }
-.today_toon li{
+.slider_wrap li{
     float:left;
-    margin-right:10px;
-    width:165px;
-    height:165px;
+    padding-right:5px;
 }
-.today_toon li a{
+.slider_wrap li a{
     position:relative;
     display:block;
 }
-.today_toon li a:after{
+.slider_wrap .img_wrap{
+    position:relative;
+}
+.slider_wrap .img_wrap:before{
     content:'';
     position: absolute;
     left:0;right:0;
     top:0;bottom:0;
     border:1px solid rgba(0,0,0,.2);
 }
-.today_toon li img{
+.slider_wrap li img{
     width:100%;
     height:100%;
 }
-.today_toon li .toon_name{
+.slider_wrap li .name{
+    display:block;
+    margin-top:3px;
+    font-size:14px;
+    line-height:18px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+/***** 페이지 *****/
+/* 오늘의 웹툰 */
+.today_toon li .name{
     position:absolute;
     top:30px;
     left:0;right:0;
+    margin:0;
     text-align:center;
+}
+/* 추천웹툰 */
+.toon_visual{
+    position:relative;
+}
+.toon_visual .info{
+    position:absolute;
+    top:20px;bottom:10px;
+    left:10px;
+    width:120px;
+}
+.toon_visual .txt{
+    color:#ff3a3a;
+}
+.toon_visual .info_tit{
+    font-size:21px;
+    line-height:23px;
+}
+.toon_visual .info_comment,.hot_toon .info_author{
+    color:#858585;
+    font-size:9px;
+    line-break:12px;
+}
+.toon_visual .go_toon{
+    position:absolute;
+    bottom:0;
+    padding:5px 10px;
+    border:1px solid #ff3a3a;
+    color:#ff3a3a;
+    font-size:10px;
+    line-height:11px;
+}
+.toon_visual img{
+    width:100%;
 }

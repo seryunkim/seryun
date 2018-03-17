@@ -87,6 +87,7 @@ textarea[disabled] {
     width:100%;
     border-bottom:1px solid #bfbfbf;
     background-color:#fff;
+    z-index:100;
 }
 .header .header_top{
     padding:16px 15px;
@@ -229,4 +230,56 @@ textarea[disabled] {
     text-align:center;
     transform:scale(0.9);
     -webkit-transform:scale(0.9);
+}
+
+/* 비주얼 툰 */
+/* 추천웹툰 */
+.toon_visual{
+    position:relative;
+}
+.toon_visual .info{
+    position:absolute;
+    top:20px;bottom:10px;
+    left:10px;
+    width:120px;
+}
+.toon_visual .txt{
+    color:#ff3a3a;
+}
+.toon_visual .info_tit{
+    font-size:21px;
+    line-height:23px;
+}
+.toon_visual .info_comment,.hot_toon .info_author{
+    color:#858585;
+    font-size:9px;
+    line-break:12px;
+}
+.toon_visual .go_toon{
+    position:absolute;
+    bottom:0;
+    padding:5px 10px;
+    border:1px solid #ff3a3a;
+    color:#ff3a3a;
+    font-size:10px;
+    line-height:11px;
+}
+.toon_visual img{
+    width:100%;
+}
+/* paging */
+.paging{
+    padding:27px 0;
+    border-bottom:1px solid #d8d8d8;
+    text-align:center;
+}
+.paging span{
+    display:inline-block;
+}
+.paging a{
+    display:inline-block;
+    min-width:30px;
+}
+.paging .active{
+    color:#ff3a3a;
 }
