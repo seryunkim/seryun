@@ -5,9 +5,9 @@
         <li class="treeview" v-for="(item, index) in sidebarAllItems" :key="index">
           <a href="#">
             <span>{{ item.title }}</span>
-            <span class="pull-right-container">
+            <span class="pull-right-container" v-if="item.count != 0">
               <i class="fa fa-angle-left pull-right"></i>
-              <small class="label pull-right bg-aqua">{{ item.count }}</small>
+              <small class="label pull-right bg-navy">{{ item.count }}</small>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -15,7 +15,7 @@
               <router-link :to="subItem.path">
                 <i class="fa fa-circle-o"></i>{{ subItem.title }}
                 <span class="pull-right-container">
-                  <small class="label pull-right bg-gray">{{ subItem.count }}</small>
+                  <small class="label pull-right bg-aqua">{{ subItem.count }}</small>
                 </span>
               </router-link>
             </li>
@@ -56,10 +56,10 @@
               {title:'월별 정산내역',path:'/'}]
           },
           { title:'계정관리',
-            count:'0',
+            count:'5',
             subItems:[
-              {title:'계정 조회',path:'/',count:0},
-              {title:'계정 승인',path:'/',count:5}]
+              {title:'계정 조회',path:'/',count:1},
+              {title:'계정 승인',path:'/',count:4}]
           }
         ]
       }
