@@ -7,9 +7,6 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-const isAdmin = true;
-let isLogin = false;
-
 new Vue({
   el: '#app',
   router,
