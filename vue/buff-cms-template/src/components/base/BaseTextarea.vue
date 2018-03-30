@@ -1,9 +1,9 @@
 <template>
   <div class="row no-margin">
     <div class="no-padding" :class="isFull? 'col-md-12':'col-md-6'" >
-      <textarea class="textarea form-control" rows="7" :placeholder="placeholderText" v-model="innerValue"></textarea>
+      <textarea class="textarea form-control" rows="7" :placeholder="placeholderText" v-model="innerValue" :maxlength="limit"></textarea>
       <div class="pull-right">
-        <small class="byte text-muted">0 / <strong>{{ limit }}</strong></small>
+        <small class="byte text-muted">{{ this.innerValue.length }} / <strong>{{ limit }}</strong></small>
       </div>
     </div>
   </div>

@@ -2,12 +2,13 @@
   <!--목록필터-->
   <div class="row">
     <div class="col-md-12">
+      <h4>목록필터</h4>
       <div class="box box-info">
         <!--title-->
-        <div class="box-header">
-          <i class="fa fa-filter"></i>
-          <h3 class="box-title">목록필터</h3>
-        </div>
+        <!--<div class="box-header">-->
+          <!--<i class="fa fa-filter"></i>-->
+          <!--<h3 class="box-title">목록필터</h3>-->
+        <!--</div>-->
         <!--//title-->
         <!--contents-->
         <div class="box-body table-responsive">
@@ -204,7 +205,7 @@
       },
       methods: {
         searchButtonClick(e){
-          console.log('search >> ', this.formData);
+          //console.log('search >> ', this.formData);
           this.$emit('datachanged', {name:'listfilter event emit', data:this.formData});
           // this.$emit('datachanged', {name:'listfilter event emit', date:this.$refs});
         },

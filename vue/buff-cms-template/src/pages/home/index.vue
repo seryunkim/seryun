@@ -1,13 +1,6 @@
 <template>
   <div class="content-wrapper" style="min-height:900px;">
-    <!--template-->
 
-    <!--template-->
-    <!--<section class="content-header">-->
-      <!--<h1>-->
-        <!--Title-->
-        <!--<small>Preview sample</small>-->
-      <!--</h1>-->
     <!--</section>-->
     <section class="content">
       <!--목록필터-->

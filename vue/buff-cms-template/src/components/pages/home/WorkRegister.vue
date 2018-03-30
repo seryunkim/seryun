@@ -13,7 +13,16 @@
             <tr>
               <th>연동 아이디</th>
               <td>
-                <a href="#" class="btn btn-default btn-sm">계정 선택하기</a>
+                <!--<a href="#" class="btn btn-default btn-sm">계정 선택하기</a>-->
+                <!--<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default">-->
+                  <!--계정 선택하기-->
+                <!--</button>-->
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default" @click="">
+                  계정 선택하기
+                  </button>
+                  <!--<modal-upload-file-->
+                  <!--v-bind="modalUploadProps"-->
+                <!--/>-->
               </td>
             </tr>
             <tr>
@@ -129,12 +138,10 @@
       </div>
       <!--//box-->
       <!--box-->
+      <h4>
+        판매 옵션
+      </h4>
       <div class="box">
-        <!--title-->
-        <div class="box-header">
-          <h5 class="box-title">판매 옵션</h5>
-        </div>
-        <!--//title-->
         <div class="box-body no-padding">
           <table class="table table-bordered">
             <tbody>
@@ -212,6 +219,7 @@
         </div>
       </div>
       <!--//box-->
+      </div>
     </div>
   </div>
 </template>
@@ -224,6 +232,7 @@
     import BaseRadioGroup from '@/components/base/BaseRadioGroup'
     import CheckboxGroup from '@/components/form/CheckboxGroup'
     import RegisterImage from '@/components/RegisterImage'
+    import ModalUploadFile from '@/components/modal/ModalUploadFile'
 
     export default {
         name: "work-register",
@@ -234,7 +243,8 @@
           BaseCheck,
           BaseRadioGroup,
           CheckboxGroup,
-          RegisterImage
+          RegisterImage,
+          ModalUploadFile
         },
         data(){
           return{
@@ -249,7 +259,7 @@
               saleType:0,
               optionFree:null,
               optionSalePrice:20,
-              optionRentPrice:{coin:10,day:3},
+              optionRentPrice:{coin:10,day:3}
             },
             workTypeProps:{ //작품종류
               items:[
@@ -335,13 +345,17 @@
                 isFull:true,
                 align:'center'
               }
+            },
+            //modal
+            modalUploadProps:{ //파일등록
+              uploadType:'image'
             }
           }
         },
         methods:{
           //연재요일
           serialDayValueChanged(data){
-            console.log('data', data);
+            //console.log('data', data);
             this.serialDayValue = data.value;
           }
         }
